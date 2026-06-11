@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Regenera Terra • Climate Tech</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================= -->
+  <!-- TERMÔMETRO DO EQUILÍBRIO -->
+  <!-- ========================================= -->
+
+  <aside class="thermometer">
+    <div class="thermo-label top">Preservação</div>
+
+    <div class="thermo-track">
+      <div class="thermo-fill" id="thermoFill"></div>
+      <div class="thermo-indicator" id="thermoIndicator"></div>
+    </div>
+
+    <div class="thermo-label bottom">Produção</div>
+
+    <div class="score-box">
+      Equilíbrio:
+      <span id="scoreValue">50</span>
+    </div>
+  </aside>
+
+  <!-- FEEDBACK FLOAT -->
+  <div class="feedback" id="feedback"></div>
+
+  <!-- ========================================= -->
+  <!-- HERO ATMOSFERA -->
+  <!-- ========================================= -->
+
+  <section class="panel atmosphere" data-bg="#9ddcff">
+
+    <div class="content-grid">
+
+      <div class="text-block">
+        <span class="eyebrow">Agricultura Regenerativa • Climate Tech</span>
+
+        <h1>
+          Regenera Terra
+        </h1>
+
+        <p>
+          Uma experiência interativa sobre o futuro da agricultura,
+          da atmosfera até o micélio subterrâneo.
+        </p>
+      </div>
+
+      <div class="visual-block">
+        <div class="floating-card">
+          <div class="icon">🛰️</div>
+          <h3>Satélites Climáticos</h3>
+          <p>Monitoramento em tempo real de carbono e umidade.</p>
+        </div>
+
+        <div class="floating-card">
+          <div class="icon">🚁</div>
+          <h3>Drones Regenerativos</h3>
+          <p>Captura de dados e dispersão biológica inteligente.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ========================================= -->
+  <!-- DOSSEL -->
+  <!-- ========================================= -->
+
+  <section class="panel canopy" data-bg="#2d8f5d">
+
+    <div class="content-grid">
+
+      <div class="text-block">
+        <span class="eyebrow">Ecossistemas Agroflorestais</span>
+
+        <h2>Dossel Vivo</h2>
+
+        <p>
+          Árvores frutíferas, biodiversidade e polinizadores
+          trabalhando em equilíbrio natural.
+        </p>
+
+        <div class="button-group">
+          <button class="positive-action">
+            Ativar Biofertilizantes
+          </button>
+
+          <button class="positive-action">
+            Incentivar Polinizadores
+          </button>
+
+          <button class="negative-action">
+            Monocultura Intensiva
+          </button>
+        </div>
+      </div>
+
+      <div class="visual-stack">
+        <div class="glass-card">
+          🍊 Produção biodiversa
+        </div>
+
+        <div class="glass-card">
+          🐝 Polinização inteligente
+        </div>
+
+        <div class="glass-card">
+          🌳 Sistemas agroflorestais
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ========================================= -->
+  <!-- SOLO -->
+  <!-- ========================================= -->
+
+  <section class="panel ground" data-bg="#9b7349">
+
+    <div class="content-grid">
+
+      <div class="text-block">
+        <span class="eyebrow">Infraestrutura Regenerativa</span>
+
+        <h2>Nível do Solo</h2>
+
+        <p>
+          Automação elétrica, irrigação cirúrgica e sensores
+          climáticos integrados ao ecossistema.
+        </p>
+
+        <div class="button-group">
+
+          <button class="positive-action">
+            Ligar Sensores de Precisão
+          </button>
+
+          <button class="positive-action">
+            Irrigação Inteligente
+          </button>
+
+          <button class="negative-action">
+            Uso de Pesticidas Químicos
+          </button>
+
+        </div>
+      </div>
+
+      <div class="machine-grid">
+
+        <div class="machine-card">
+          ⚡ Tratores Elétricos
+        </div>
+
+        <div class="machine-card">
+          💧 Irrigação Cirúrgica
+        </div>
+
+        <div class="machine-card">
+          📡 Sensoriamento Climático
+        </div>
+
+        <div class="machine-card">
+          🌱 Monitoramento de Solo
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ========================================= -->
+  <!-- SUBSOLO -->
+  <!-- ========================================= -->
+
+  <section class="panel underground" data-bg="#1d120c">
+
+    <div class="subsoil-wrapper">
+
+      <div class="subsoil-intro">
+        <span class="eyebrow">Micélio • Água • Regeneração</span>
+
+        <h2>Subsolo Vivo</h2>
+
+        <p>
+          Toda regeneração começa abaixo da superfície.
+          Deixe sua mensagem para os agricultores de 2050.
+        </p>
+      </div>
+
+      <!-- FORMULÁRIO -->
+      <div class="time-capsule" id="capsuleForm">
+
+        <input
+          type="text"
+          id="userName"
+          placeholder="Seu nome"
+        />
+
+        <textarea
+          id="userMessage"
+          placeholder="Escreva uma mensagem para os agricultores do futuro..."
+        ></textarea>
+
+        <button id="submitCapsule">
+          Enviar Mensagem
+        </button>
+
+      </div>
+
+      <!-- CERTIFICADO -->
+      <div class="certificate hidden" id="certificate">
+
+        <div class="certificate-border">
+
+          <span class="certificate-tag">
+            CERTIFICADO DIGITAL
+          </span>
+
+          <h3>
+            Compromisso com a Terra
+          </h3>
+
+          <p class="certificate-text">
+            Este certificado reconhece
+            <strong id="certificateName"></strong>
+            por contribuir simbolicamente com
+            práticas regenerativas para o futuro da agricultura.
+          </p>
+
+          <div class="certificate-date" id="certificateDate"></div>
+
+          <button id="downloadCertificate">
+            Baixar Certificado
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
